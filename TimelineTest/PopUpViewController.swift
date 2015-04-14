@@ -1,15 +1,15 @@
 //
-//  PopUpViewControllerSwift.swift
-//  NMPopUpView
+//  PopUpViewController
+//  TimelineTest
 //
-//  Created by Nikos Maounis on 13/9/14.
-//  Copyright (c) 2014 Nikos Maounis. All rights reserved.
+//  Created by Connor Bain on 4/9/15.
+//  Copyright (c) 2015 Connor Bain. All rights reserved.
 //
 
 import UIKit
 import QuartzCore
 
-@objc class PopUpViewControllerSwift : UIViewController {
+@objc class PopUpViewController: UIViewController {
     
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
@@ -31,19 +31,16 @@ import QuartzCore
         self.popUpView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
     }
     
-    func showInView(aView: UIView!, withImage image : UIImage!, withMessage message: String!, animated: Bool)
-    {
+    func showInView(aView: UIView!, withImage image: UIImage!, withMessage message: String!, animated: Bool) {
         aView.addSubview(self.view)
         logoImg!.image = image
         messageLabel!.text = message
-        if animated
-        {
+        if animated {
             self.showAnimate()
         }
     }
     
-    func showAnimate()
-    {
+    func showAnimate() {
         self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
         self.view.alpha = 0.0;
         UIView.animateWithDuration(0.25, animations: {
@@ -52,8 +49,7 @@ import QuartzCore
         });
     }
     
-    func removeAnimate()
-    {
+    func removeAnimate() {
         UIView.animateWithDuration(0.25, animations: {
             self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
             self.view.alpha = 0.0;
@@ -65,6 +61,7 @@ import QuartzCore
         });
     }
     
+    // This is linked to the .xib close button via the IBAction
     @IBAction func closePopup(sender: AnyObject) {
         self.removeAnimate()
     }

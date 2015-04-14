@@ -14,7 +14,7 @@
 		5A5240781AD75A7500648145 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5240761AD75A7500648145 /* LaunchScreen.xib */; };
 		5A5240841AD75A7500648145 /* TimelineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5240831AD75A7500648145 /* TimelineTestTests.swift */; };
 		5A9ACA7C1ADCA1120022DECA /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A9ACA7A1ADCA1120022DECA /* PopUpViewController.xib */; };
-		5A9ACA7D1ADCA1120022DECA /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ACA7B1ADCA1120022DECA /* PopUpViewControllerSwift.swift */; };
+		5A9ACA7D1ADCA1120022DECA /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ACA7B1ADCA1120022DECA /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		5A5240821AD75A7500648145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5240831AD75A7500648145 /* TimelineTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTestTests.swift; sourceTree = "<group>"; };
 		5A9ACA7A1ADCA1120022DECA /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
-		5A9ACA7B1ADCA1120022DECA /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
+		5A9ACA7B1ADCA1120022DECA /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5A9ACA7A1ADCA1120022DECA /* PopUpViewController.xib */,
-				5A9ACA7B1ADCA1120022DECA /* PopUpViewControllerSwift.swift */,
+				5A9ACA7B1ADCA1120022DECA /* PopUpViewController.swift */,
 				5A52406D1AD75A7500648145 /* AppDelegate.swift */,
 				5A52406F1AD75A7500648145 /* ViewController.swift */,
 				5A5240711AD75A7500648145 /* Main.storyboard */,
@@ -222,7 +222,7 @@
 			files = (
 				5A5240701AD75A7500648145 /* ViewController.swift in Sources */,
 				5A52406E1AD75A7500648145 /* AppDelegate.swift in Sources */,
-				5A9ACA7D1ADCA1120022DECA /* PopUpViewControllerSwift.swift in Sources */,
+				5A9ACA7D1ADCA1120022DECA /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
